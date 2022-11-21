@@ -15,13 +15,19 @@ npm install --save dynamic-grid-layout
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'dynamic-grid-layout'
+import { GridView } from 'dynamic-grid-layout'
 import 'dynamic-grid-layout/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Item = ({ item }: any) => <p>{item}</p>
+
+const Example = () => {
+  const items = ['item1', 'item2']
+  return (
+    <GridView
+      items={items}
+      renderItem={(item: any) => <Item item={item}></Item>}
+    />
+  )
 }
 ```
 

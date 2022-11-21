@@ -11,7 +11,7 @@
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://maiducthang.github.io/dynamic-grid-layout",
+  "homepage": "https://maiducthang279.github.io/dynamic-grid-layout",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
